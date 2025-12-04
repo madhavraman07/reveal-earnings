@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Quarterly Earnings Report</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
@@ -13,65 +14,76 @@
   <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
 </head>
-<body>
 
+<body>
 <div class="reveal">
   <div class="slides">
 
-  <section>
-  <h1>Quarterly Earnings Report</h1>
-  <p>Technical Consultant — Financial Analytics</p>
-
-  <!-- IMPORTANT: Plain-text email shown VERY clearly -->
-  <h3 style="color: yellow;">24f2002722@ds.study.iitm.ac.in</h3>
-
-  <aside class="notes">
-    Read the title and introduce yourself. 
-    Make sure the email is clearly visible on the slide.
-  </aside>
-</section>
-
-
+    <!-- SLIDE 1 (Markdown + Email visible) -->
     <section data-markdown>
       <textarea data-template>
-## Markdown Slide  
-- Revenue ↑  
-- Profit ↑  
-- Customers ↑  
+# Quarterly Earnings Report  
+
+**Email:** 24f2002722@ds.study.iitm.ac.in  
+
+Note: This slide MUST contain the email clearly.  
       </textarea>
+      <aside class="notes">Introduce the presentation and email.</aside>
     </section>
 
+    <!-- Markdown slide -->
+    <section data-markdown>
+      <textarea data-template>
+## Key Highlights  
+- Revenue ↑  
+- Profit ↑  
+- Margin Stable  
+      </textarea>
+      <aside class="notes">Explain key business highlights.</aside>
+    </section>
+
+    <!-- Fragments slide -->
     <section>
-      <h2>Fragments</h2>
+      <h2>Business Segments</h2>
       <ul>
         <li class="fragment">Retail Banking</li>
         <li class="fragment">Corporate Banking</li>
         <li class="fragment">Wealth Management</li>
       </ul>
+      <aside class="notes">Appear one-by-one due to fragments.</aside>
     </section>
 
+    <!-- Code block -->
     <section>
+      <h3>Code Sample</h3>
       <pre><code class="language-python">
 import pandas as pd
 df = pd.read_csv("earnings.csv")
-print(df.head())
+df.head()
       </code></pre>
+      <aside class="notes">Show syntax highlighting demo.</aside>
     </section>
 
+    <!-- Math formula -->
     <section data-markdown>
       <textarea data-template>
-## Financial Equation  
+## Net Present Value  
+
 \[
 NPV = \sum_{t=1}^{N} \frac{CF_t}{(1+r)^t}
 \]
       </textarea>
+      <aside class="notes">Explain the financial formula.</aside>
     </section>
 
   </div>
 </div>
 
 <script>
-  Reveal.initialize({hash:true, plugins:[RevealMarkdown, RevealHighlight, RevealMath]});
+Reveal.initialize({
+  hash: true,
+  plugins: [RevealMarkdown, RevealHighlight, RevealMath]
+});
 </script>
 
 </body>
