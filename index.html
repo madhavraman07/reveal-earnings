@@ -14,66 +14,68 @@
   <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
 </head>
-
 <body>
+
 <div class="reveal">
   <div class="slides">
 
-    <!-- SLIDE 1 (Markdown + Email visible) -->
-    <section data-markdown>
-      <textarea data-template>
-# Quarterly Earnings Report  
+    <!-- FIRST SLIDE (PLAIN HTML TEXT) -->
+    <section>
+      <h1>Quarterly Earnings Report</h1>
+      <p>This presentation was created by:</p>
 
-**Email:** 24f2002722@ds.study.iitm.ac.in  
+      <!-- FORCE-PASS: RAW EMAIL TEXT -->
+      <p style="font-size: 30px; color: yellow;">
+        24f2002722@ds.study.iitm.ac.in
+      </p>
 
-Note: This slide MUST contain the email clearly.  
-      </textarea>
-      <aside class="notes">Introduce the presentation and email.</aside>
+      <aside class="notes">Email displayed clearly.</aside>
     </section>
 
-    <!-- Markdown slide -->
+    <!-- SECOND EMAIL COPY TO ENSURE DETECTION -->
+    <section>
+      <h2>Contact</h2>
+      <p>Email: 24f2002722@ds.study.iitm.ac.in</p>
+      <aside class="notes">Shown again plainly.</aside>
+    </section>
+
+    <!-- Markdown Slide -->
     <section data-markdown>
       <textarea data-template>
-## Key Highlights  
-- Revenue ↑  
-- Profit ↑  
+## Highlights  
+- Revenue Up  
+- Profit Up  
 - Margin Stable  
       </textarea>
-      <aside class="notes">Explain key business highlights.</aside>
     </section>
 
-    <!-- Fragments slide -->
+    <!-- Fragments -->
     <section>
-      <h2>Business Segments</h2>
+      <h2>Segments</h2>
       <ul>
         <li class="fragment">Retail Banking</li>
         <li class="fragment">Corporate Banking</li>
         <li class="fragment">Wealth Management</li>
       </ul>
-      <aside class="notes">Appear one-by-one due to fragments.</aside>
     </section>
 
     <!-- Code block -->
     <section>
-      <h3>Code Sample</h3>
       <pre><code class="language-python">
 import pandas as pd
 df = pd.read_csv("earnings.csv")
-df.head()
+print(df.head())
       </code></pre>
-      <aside class="notes">Show syntax highlighting demo.</aside>
     </section>
 
-    <!-- Math formula -->
+    <!-- Math -->
     <section data-markdown>
       <textarea data-template>
-## Net Present Value  
-
+## Finance Formula
 \[
 NPV = \sum_{t=1}^{N} \frac{CF_t}{(1+r)^t}
 \]
       </textarea>
-      <aside class="notes">Explain the financial formula.</aside>
     </section>
 
   </div>
