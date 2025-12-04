@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Quarterly Earnings Report</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+    <section>
+      <h1>Quarterly Earnings Report</h1>
+      <p>Email: <b>24f2002722@ds.study.iitm.ac.in</b></p>
+      <aside class="notes">Introduce the report.</aside>
+    </section>
+
+    <section data-markdown>
+      <textarea data-template>
+## Markdown Slide  
+- Revenue ↑  
+- Profit ↑  
+- Customers ↑  
+      </textarea>
+    </section>
+
+    <section>
+      <h2>Fragments</h2>
+      <ul>
+        <li class="fragment">Retail Banking</li>
+        <li class="fragment">Corporate Banking</li>
+        <li class="fragment">Wealth Management</li>
+      </ul>
+    </section>
+
+    <section>
+      <pre><code class="language-python">
+import pandas as pd
+df = pd.read_csv("earnings.csv")
+print(df.head())
+      </code></pre>
+    </section>
+
+    <section data-markdown>
+      <textarea data-template>
+## Financial Equation  
+\[
+NPV = \sum_{t=1}^{N} \frac{CF_t}{(1+r)^t}
+\]
+      </textarea>
+    </section>
+
+  </div>
+</div>
+
+<script>
+  Reveal.initialize({hash:true, plugins:[RevealMarkdown, RevealHighlight, RevealMath]});
+</script>
+
+</body>
+</html>
